@@ -98,17 +98,25 @@ void Draw()
 
     }
     for (int i = 0; i < width + 2; i++)
+    {
         cout << "# "; // the last line
+    }
     cout << endl;
     cout << "Score: " << score;
     if (speed < 40)
+    {
         cout << "  Speed: " << speed << endl;
+    }
     else
+    {
         cout << "  Speed: MAX" << endl;
-    if (debug = true);
+    }
+    if (debug == true)
+    {
         cout << "Player X/Y: " << playerX << "," << playerY;
         cout << "  Fruit X/Y: " << fruitX << "," << fruitY << endl;
-        cout << "Tail Length: " << nTail << endl;    
+        cout << "Tail Length: " << nTail << endl;
+    }
 }
 void Input()
 {
@@ -147,11 +155,7 @@ void Input()
             }
             case 'j':
             {
-                if (debug = false)
-                    debug = true;
-                else
-                    debug = false;
-                break;
+                debug = (!debug);
             }
         }
     }
