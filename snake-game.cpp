@@ -223,7 +223,7 @@ void Logic()
 }
 void Loser()
 {
-    cout << "ur a fuken cutie pie lmao" << endl;
+    cout << "Game Over!" << endl;
     system ("pause");
 }
 int main()
